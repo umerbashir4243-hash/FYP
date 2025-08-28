@@ -1,0 +1,76 @@
+2025-07-31 01:09:14,784 - INFO - Starting IDS pipeline - Dataset: NSL_KDD, Mode: test
+2025-07-31 01:09:14,811 - INFO - Loading NSL-KDD dataset...
+2025-07-31 01:09:14,812 - INFO - Loading training data from /Users/haris/Documents/Cursor Projects/pocs/intrusion_detection/data/KDDTrain+_20Percent.txt
+2025-07-31 01:09:15,087 - INFO - Loading test data from /Users/haris/Documents/Cursor Projects/pocs/intrusion_detection/data/KDDTest-21.txt
+2025-07-31 01:09:15,208 - INFO - Loaded 25192 training samples and 11850 test samples
+2025-07-31 01:09:15,226 - INFO - Mapping attack types to binary classification...
+2025-07-31 01:09:15,260 - INFO - Attack type distribution: Normal=15601, Attacks=21441
+2025-07-31 01:09:15,283 - INFO - Encoding categorical features: ['protocol_type', 'service', 'flag']
+2025-07-31 01:09:15,334 - INFO - Applying standard scaling to features...
+2025-07-31 01:09:15,414 - INFO - Final dataset shape: (37042, 41)
+2025-07-31 01:09:15,415 - INFO - Feature names: ['duration', 'protocol_type', 'service', 'flag', 'src_bytes', 'dst_bytes', 'land', 'wrong_fragment', 'urgent', 'hot', 'num_failed_logins', 'logged_in', 'num_compromised', 'root_shell', 'su_attempted', 'num_root', 'num_file_creations', 'num_shells', 'num_access_files', 'num_outbound_cmds', 'is_host_login', 'is_guest_login', 'count', 'srv_count', 'serror_rate', 'srv_serror_rate', 'rerror_rate', 'srv_rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'srv_diff_host_rate', 'dst_host_count', 'dst_host_srv_count', 'dst_host_same_srv_rate', 'dst_host_diff_srv_rate', 'dst_host_same_src_port_rate', 'dst_host_srv_diff_host_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate', 'dst_host_rerror_rate', 'dst_host_srv_rerror_rate']
+2025-07-31 01:09:15,416 - INFO - Training set: (25192, 41), Test set: (11850, 41)
+2025-07-31 01:09:15,423 - INFO - Execution time for load_nsl_kdd: 0.6112 seconds
+2025-07-31 01:09:15,423 - INFO - Execution time for load_dataset: 0.6129 seconds
+2025-07-31 01:09:20,369 - INFO - Execution time for select_features: 4.9445 seconds
+2025-07-31 01:09:20,369 - INFO - Processing RandomForest...
+2025-07-31 01:09:22,398 - INFO - Execution time for train_model: 2.0283 seconds
+2025-07-31 01:09:23,265 - INFO - Execution time for evaluate_model: 0.7812 seconds
+2025-07-31 01:11:57,299 - INFO - Processing SVM...
+2025-07-31 01:11:57,523 - INFO - Execution time for train_model: 0.2236 seconds
+2025-07-31 01:11:57,834 - INFO - Execution time for evaluate_model: 0.3073 seconds
+2025-07-31 01:12:18,306 - INFO - Pipeline completed successfully.
+2025-07-31 01:12:18,313 - INFO - Execution time for main: 183.5305 seconds
+2025-07-31 01:32:58,499 - INFO - Starting IDS pipeline - Dataset: NSL_KDD, Mode: test
+2025-07-31 01:32:58,515 - INFO - Loading NSL-KDD dataset...
+2025-07-31 01:32:58,516 - INFO - Loading training data from data/KDDTrain+_20Percent.txt
+2025-07-31 01:32:58,697 - INFO - Loading test data from data/KDDTest-21.txt
+2025-07-31 01:32:58,783 - INFO - Loaded 25192 training samples and 11850 test samples
+2025-07-31 01:32:58,799 - INFO - Mapping attack types to binary classification...
+2025-07-31 01:32:58,825 - INFO - Attack type distribution: Normal=15601, Attacks=21441
+2025-07-31 01:32:58,843 - INFO - Encoding categorical features: ['protocol_type', 'service', 'flag']
+2025-07-31 01:32:58,888 - INFO - Applying standard scaling to features...
+2025-07-31 01:32:58,947 - INFO - Final dataset shape: (37042, 41)
+2025-07-31 01:32:58,947 - INFO - Feature names: ['duration', 'protocol_type', 'service', 'flag', 'src_bytes', 'dst_bytes', 'land', 'wrong_fragment', 'urgent', 'hot', 'num_failed_logins', 'logged_in', 'num_compromised', 'root_shell', 'su_attempted', 'num_root', 'num_file_creations', 'num_shells', 'num_access_files', 'num_outbound_cmds', 'is_host_login', 'is_guest_login', 'count', 'srv_count', 'serror_rate', 'srv_serror_rate', 'rerror_rate', 'srv_rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'srv_diff_host_rate', 'dst_host_count', 'dst_host_srv_count', 'dst_host_same_srv_rate', 'dst_host_diff_srv_rate', 'dst_host_same_src_port_rate', 'dst_host_srv_diff_host_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate', 'dst_host_rerror_rate', 'dst_host_srv_rerror_rate']
+2025-07-31 01:32:58,948 - INFO - Training set: (25192, 41), Test set: (11850, 41)
+2025-07-31 01:32:58,955 - INFO - Execution time for load_nsl_kdd: 0.4391 seconds
+2025-07-31 01:32:58,955 - INFO - Execution time for load_dataset: 0.4400 seconds
+2025-07-31 01:33:01,951 - INFO - Execution time for select_features: 2.9951 seconds
+2025-07-31 01:33:01,951 - INFO - Processing RandomForest...
+2025-07-31 01:33:03,336 - INFO - Execution time for train_model: 1.3844 seconds
+2025-07-31 01:33:03,982 - INFO - Execution time for evaluate_model: 0.5864 seconds
+2025-07-31 01:34:33,538 - INFO - Processing SVM...
+2025-07-31 01:34:33,644 - INFO - Execution time for train_model: 0.1063 seconds
+2025-07-31 01:34:33,822 - INFO - Execution time for evaluate_model: 0.1755 seconds
+2025-07-31 01:34:44,185 - INFO - Pipeline completed successfully.
+2025-07-31 01:34:44,188 - INFO - Execution time for main: 105.6897 seconds
+2025-08-18 09:37:08,676 - INFO - Starting IDS pipeline - Dataset: NSL_KDD, Mode: test
+2025-08-18 09:37:08,681 - INFO - Starting load_dataset...
+2025-08-18 09:37:08,682 - INFO - Loading NSL-KDD dataset...
+2025-08-18 09:37:08,683 - INFO - Starting load_nsl_kdd...
+2025-08-18 09:37:08,684 - INFO - Loading training data from data\KDDTrain+_20Percent.txt
+2025-08-18 09:37:08,845 - INFO - Loading test data from data\KDDTest-21.txt
+2025-08-18 09:37:08,928 - INFO - Loaded 25192 training samples and 11850 test samples
+2025-08-18 09:37:08,937 - INFO - Mapping attack types to binary classification...
+2025-08-18 09:37:08,967 - INFO - Attack type distribution: Normal=15601, Attacks=21441
+2025-08-18 09:37:08,985 - INFO - Encoding categorical features: ['protocol_type', 'service', 'flag']
+2025-08-18 09:37:09,017 - INFO - Applying standard scaling to features...
+2025-08-18 09:37:09,070 - INFO - Final dataset shape: (37042, 41)
+2025-08-18 09:37:09,071 - INFO - Feature names: ['duration', 'protocol_type', 'service', 'flag', 'src_bytes', 'dst_bytes', 'land', 'wrong_fragment', 'urgent', 'hot', 'num_failed_logins', 'logged_in', 'num_compromised', 'root_shell', 'su_attempted', 'num_root', 'num_file_creations', 'num_shells', 'num_access_files', 'num_outbound_cmds', 'is_host_login', 'is_guest_login', 'count', 'srv_count', 'serror_rate', 'srv_serror_rate', 'rerror_rate', 'srv_rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'srv_diff_host_rate', 'dst_host_count', 'dst_host_srv_count', 'dst_host_same_srv_rate', 'dst_host_diff_srv_rate', 'dst_host_same_src_port_rate', 'dst_host_srv_diff_host_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate', 'dst_host_rerror_rate', 'dst_host_srv_rerror_rate']
+2025-08-18 09:37:09,073 - INFO - Training set: (25192, 41), Test set: (11850, 41)
+2025-08-18 09:37:09,079 - INFO - Completed load_nsl_kdd in 0.40 seconds
+2025-08-18 09:37:09,081 - INFO - Completed load_dataset in 0.40 seconds
+2025-08-18 09:37:09,084 - INFO - Starting select_features...
+2025-08-18 09:37:14,415 - INFO - Completed select_features in 5.33 seconds
+2025-08-18 09:37:14,416 - INFO - Processing RandomForest...
+2025-08-18 09:37:14,417 - INFO - Starting train_model...
+2025-08-18 09:37:16,786 - INFO - Completed train_model in 2.37 seconds
+2025-08-18 09:37:16,910 - INFO - Starting evaluate_model...
+2025-08-18 09:37:17,595 - INFO - Completed evaluate_model in 0.69 seconds
+2025-08-18 09:40:21,843 - INFO - Processing SVM...
+2025-08-18 09:40:21,844 - INFO - Starting train_model...
+2025-08-18 09:40:22,040 - INFO - Completed train_model in 0.20 seconds
+2025-08-18 09:40:22,046 - INFO - Starting evaluate_model...
+2025-08-18 09:40:22,444 - INFO - Completed evaluate_model in 0.40 seconds
+2025-08-18 09:40:47,408 - INFO - Pipeline completed successfully.
+2025-08-18 09:40:47,416 - INFO - Completed main in 218.74 seconds
