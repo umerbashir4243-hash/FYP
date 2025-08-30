@@ -1,4 +1,4 @@
-# Intrusion Detection System
+# Intrusion Detection Prediction using Random Forest and Support Vector Machine Learning Algorithms 
 
 ## Overview
 This project implements an advanced Intrusion Detection System (IDS) using machine learning techniques, specifically Random Forest and Support Vector Machine (SVM) algorithms, enhanced with feature selection methods and Explainable AI (XAI) techniques. The system is designed based on research requirements for scalable, interpretable, and high-performance intrusion detection using the **real NSL-KDD dataset**.
